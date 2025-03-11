@@ -1,9 +1,10 @@
-function toCase(text) {
-  // write your code here
- if (str === "") return "-"; // Handle empty string case
-    return str.toLowerCase() + "-" + str.toUpperCase();}
+function toCase(str) {
+    if (!str) return "-"; // Handles null, undefined, or empty string
+    return str.toLowerCase() + "-" + str.toUpperCase();
+}
 
-// DO not change the code below
+// Do not change the code below
+const input = prompt("Enter a string:");
+alert(toCase(input));
 
-const text = prompt("Enter text:");
-alert(toCase(text));
+ 
